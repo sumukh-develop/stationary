@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery Details Form</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="stationery-container">
+        <h2>ENTER STATIONERY DETAILS</h2>
+        <form id="stationeryForm">
+
+            <div class="form-group">
+                <label for="category">CATEGORY:</label>
+                <div class="category-options">
+                    <label for="pen/pencil"> <input type="checkbox" id="pen/pencil" name="category[]" value="pen/pencil"> PEN/PENCIL</label>
+                    <label for="books"> <input type="checkbox" id="books" name="category[]" value="books"> BOOKS</label>
+                    <label for="geometry box"> <input type="checkbox" id="geometry box" name="category[]" value="geometry box"> GEOMETRY BOX </label>
+                    <label for="all"> <input type="checkbox" id="all" name="category[]" value="all"> ALL</label>
+                    <label for="others"> <input type="checkbox" id="others" name="category[]" value="others"> OTHER </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="stationeryName">If other,mention STATIONERY NAME:</label>
+                <input type="text" id="stationeryName" name="stationeryName[]" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="stationeryDescription">STATIONERY DESCRIPTION:</label>
+                <textarea id="stationeryDescription" name="stationeryDescription[]" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">PICKUP DATE:</label>
+                <input type="date" id="pickupDate" name="pickupDate[]" required>
+            </div>
+            <div class="form-group">
+                <label for="stationeryImage">STATIONERY IMAGE:</label>
+                <input type="file" id="stationeryImage" name="stationeryImage[]" accept="image/*" required>
+            </div>
+
+            
+            
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="scriptssstationery.js"></script>
+</body>
+</html>
